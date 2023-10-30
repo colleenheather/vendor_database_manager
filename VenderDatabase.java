@@ -67,7 +67,7 @@ public class VenderDatabase {
 	public void Connect() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost/vendor_database", "root", "colleen");
+			con = DriverManager.getConnection("jdbc:mysql://localhost/vendor_database", "", "");
 		}
 		catch (ClassNotFoundException ex) {
 			
